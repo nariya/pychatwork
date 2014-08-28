@@ -1,13 +1,11 @@
 # -*- coding: utf-8 -*-
+# https://github.com/nariya/pychatwork
 import requests
-#import argparse
-#import datetime
 
 class Chatwork:
 
 	def __init__(self, token):
 		self.token = token
-#		self.start_time = datetime.datetime.now()
 		self.apiurl = u'https://api.chatwork.com/v1/'
 
 	def send(self, roomid, message):
