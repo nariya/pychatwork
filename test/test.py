@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
+from __future__ import print_function
 from pychatwork import Chatwork
 import os
 
-#enter your chatwork token.
+# enter your chatwork token.
 CHATWORK_TOKEN = os.environ['CHATWORK_TOKEN']
 
-#enter your room id
+# enter your room id
 CHATWORK_ROOM = os.environ['CHATWORK_ROOM']
 
 c = Chatwork(CHATWORK_TOKEN)
@@ -21,4 +22,6 @@ you can use UTF-8 message
 chatworkロボだよ
 chatwork.pyから自動でchatworkにつぶやけるすごいやつだよ
 """
-c.send(CHATWORK_ROOM, message)
+print(c.getme())
+print(c.send(CHATWORK_ROOM, message))
+print(c.read(CHATWORK_ROOM))
