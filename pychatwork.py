@@ -7,7 +7,7 @@ import requests
 class Chatwork:
     def __init__(self, token):
         self.token = token
-        self.apiurl = u'https://api.chatwork.com/v1/'
+        self.apiurl = u'https://api.chatwork.com/v2/'
 
     def send(self, roomid, message):
         url = (self.apiurl + u'rooms/{}/messages').format(roomid)
